@@ -12,6 +12,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
 }
 
 #scoreBox{
@@ -61,8 +66,8 @@
     border-radius: 8px;
 }
 .keyboard {
+       flex-wrap: wrap;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 195px;
