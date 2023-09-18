@@ -45,7 +45,7 @@
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
-    margin:20px;
+    margin:50px;
 }
 
 .head{
