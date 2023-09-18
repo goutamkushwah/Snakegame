@@ -1,9 +1,9 @@
 // Game Constants & Variables
 let inputDir = {x: 0, y: 0}; 
-const foodSound = new Audio('food.mp3');
-const gameOverSound = new Audio('gameover.mp3');
-const moveSound = new Audio('move.mp3');
-const musicSound = new Audio('music.mp3');
+const foodSound = new Audio('music/food.mp3');
+const gameOverSound = new Audio('music/gameover.mp3');
+const moveSound = new Audio('music/move.mp3');
+const musicSound = new Audio('music/music.mp3');
 let speed = 10;
 let score = 0;
 let lastPaintTime = 0;
@@ -147,38 +147,3 @@ window.addEventListener('keydown', e =>{
     }
 
 });
-const myDiv1 = document.getElementById("left");
-
-// Add a click event listener to the div
-myDiv1.addEventListener("click", function() {
-    console.log("left");
-    inputDir.x = -1;
-    inputDir.y = 0;
-    
-   // break;
-})
-const myDiv2 = document.getElementById("right");
-
-// Add a click event listener to the div
-myDiv2.addEventListener("click", function() {
-    console.log("right");
-    inputDir.x = 1;
-    inputDir.y = 0;
-})
-const myDiv3 = document.getElementById("up");
-
-// Add a click event listener to the div
-myDiv3.addEventListener("click", function() {
-    console.log("up");
-    inputDir.x = 0;
-    inputDir.y = -1;
-})
-
-const myDiv4 = document.getElementById("down");
-
-// Add a click event listener to the div
-myDiv4.addEventListener("click", function() {
-    console.log("down");
-    inputDir.x = 0;
-    inputDir.y = 1;
-})
