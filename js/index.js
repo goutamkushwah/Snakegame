@@ -81,6 +81,14 @@ function gameEngine() {
         foodSound.play();
         score += 1;
         document.getElementById('scoreBox').innerHTML = "Score: " + score;
+
+        // Update high score if necessary
+        if (score > hiscoreval) {
+            hiscoreval = score;
+            localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
+            document.getElementById('hiscoreBox').innerHTML = "HiScore: " + hiscoreval;
+        }
+
         snakeArr.unshift({ x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y });
         let a = 2;
         let b = 16;
