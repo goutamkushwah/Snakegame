@@ -115,7 +115,7 @@ function gameEngine() {
 
 // Main logic starts here
 musicSound.play();
-let hiscore = localStorage.getItem("hiscoreBox");
+let hiscore = localStorage.getItem("hiscore");
 let hiscoreval;
 if (hiscore === null) {
     hiscoreval = 0;
